@@ -3,13 +3,6 @@ import java.util.Collections;
 
 
 public class HavelHakimi {
-    public static void main(String[] args) {
-        
-        HavelHakimi hh = new HavelHakimi();
-
-        System.out.println(hh.havelHakimi(new int[]{5, 3, 0, 2, 6, 2, 0, 7, 2, 5}));
-        System.out.println(hh.havelHakimi(new int[]{3, 1, 2, 3, 1, 0}));
-    }
 
     public int[] removeZeroes(int[] in) {
         int length = 0;
@@ -53,13 +46,6 @@ public class HavelHakimi {
             out[i] = in[in.length-i-1];
         }
         return out;
-    }
-
-    public void printArr(int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i]+", ");
-        }
-        System.out.println("");
     }
 
     public boolean havelHakimi(int[] in) {
